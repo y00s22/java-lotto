@@ -12,8 +12,8 @@ public class OutputView {
      * 수익률을 출력하는 뷰
      */
 
-    public void howManyLottoTicketsView(int num) {
-        System.out.println(num + "개를 구매했습니다.");
+    public void howManyLottoTicketsView(int totalTicketNum, int manualTicketNum) {
+        System.out.println("수동으로 " + manualTicketNum + "장, 자동으로" + (totalTicketNum - manualTicketNum) + "개를 구매했습니다.");
     }
 
     public void printLottoNumbersView(LottoNumbers numbers) {
